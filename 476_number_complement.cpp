@@ -17,6 +17,6 @@ public:
 * int findComplement(int num) {  
 *        unsigned int mask = ~0;  
 *        while(num&mask) mask <<= 1;  
-*        return (~mask) ^ num;  
+*        return (~mask) ^ num; // return (~mask) & (~num);
 *    } 
 */
