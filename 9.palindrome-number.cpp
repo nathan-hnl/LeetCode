@@ -45,7 +45,11 @@
  *
  */
 
-//reference link: https://blog.csdn.net/regemc/article/details/79698015
+//reference link: 
+/*
+ * https://blog.csdn.net/regemc/article/details/79698015
+ * https://leetcode.com/problems/palindrome-number/solution/
+*/
 
 class Solution {
 public:
