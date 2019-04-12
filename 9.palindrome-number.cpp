@@ -44,10 +44,26 @@
  * Coud you solve it without converting the integer to a string?
  *
  */
+
+//reference link: https://blog.csdn.net/regemc/article/details/79698015
+
 class Solution {
 public:
     bool isPalindrome(int x) {
+        //1. negative number
+        //2. last number is 0, while the number itself is not 0
+        if (x < 0 || (x % 10 == 0 && x != 0))
+            return false;
 
+        //only compare two half part is equal or not
+        int revertedNum = 0;
+        while (x > revertedNum)
+        {
+            revertedNum = revertedNum * 10 + x % 10;
+            x /= 10;
+        }
+
+        return x == revertedNum || x == revertedNum / 10;
     }
 };
 
